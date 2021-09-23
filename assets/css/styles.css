@@ -1,0 +1,35 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #fcf7f8;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header {
+    padding: 20px;
+    background-color: #5b616a;
+    box-shadow: 0 0px 15px #5b616a;
+}
+
+.header a {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.header nav {
+    display: flex;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+.nav-btn {
+    display: inline-block;
+    margin-left: 25px;
+    color: #ffffff;
+    text-decoration: none;
+}
