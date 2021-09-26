@@ -3,7 +3,7 @@
 :root {
     --clr-background: #fcf7f8;
     --clr-nav: #5B616A;
-    --clr-footer: #5B616A;
+    --clr-footer: #60E1E0;
     --clr-denim: #275DAD;
     --clr-hover: #60E1E0;
     --clr-blue-yonder: #ABA9C3;
@@ -196,7 +196,7 @@ body {
 .footer-container {
     margin-top: 10px;
     padding: 0 15px;
-    background-color: var(--clr-hover);
+    background-color: var(--clr-footer);
     text-align: center;
 }
 
