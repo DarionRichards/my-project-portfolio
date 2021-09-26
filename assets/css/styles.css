@@ -14,7 +14,7 @@
 
 body {
     font-family: Verdana, sans-serif;
-    background: var(--clr-background)
+    background: var(--clr-blue-yonder)
 }
 
 .heading {
@@ -44,7 +44,6 @@ body {
 .fixed {
     position: fixed;
     top: 0;
-    height: 80px;
     width: 100%;
     z-index: 1;
 }
@@ -101,7 +100,8 @@ body {
 
 #navItem1 a:hover,
 #navItem2 a:hover,
-#navItem3 a:hover {
+#navItem3 a:hover,
+.logo a:hover {
     color: var(--clr-hover);
     transition: all 200ms ease-in;
 }
@@ -132,7 +132,7 @@ body {
 /* Main Section Styles */
 
 .container {
-    margin-top: 10px;
+    margin-top: 65px;
     padding: 0 60px 35px;
     background-color: var(--clr-blue-yonder);
 }
@@ -147,12 +147,24 @@ body {
     display: flex;
 }
 
-.projects-container {
+.project-container {
+    margin-top: 10px;
+    padding: 0 60px 35px;
+    background-color: var(--clr-blue-yonder);
+}
+
+.project-card-container {
     display: flex;
     flex-direction: column;
     width: 100%;
     background-color: var(--clr-blue-yonder);
     text-align: center;
+}
+
+.project-card {
+    border: 2px solid var(--clr-hover);
+    position: relative;
+    margin: 15px 15px;
 }
 
 .main-project {
@@ -167,12 +179,6 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-}
-
-.project-card {
-    border: 2px solid var(--clr-hover);
-    position: relative;
-    margin: 15px 15px;
 }
 
 .display-topleft {
