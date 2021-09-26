@@ -9,6 +9,9 @@
     --clr-blue-yonder: #ABA9C3;
 }
 
+
+/* General styles for web page */
+
 body {
     font-family: Verdana, sans-serif;
     background: var(--clr-background)
@@ -18,6 +21,18 @@ body {
     position: fixed;
     width: 100%;
     z-index: 1;
+}
+
+.heading {
+    padding: 15px 35px;
+    border-bottom: 5px solid var(--clr-hover);
+    letter-spacing: 2px;
+}
+
+.heading h1 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
 }
 
 
@@ -202,6 +217,13 @@ body {
 
 
 /* Main Section Styles */
+
+.container {
+    margin-top: 10px;
+    padding: 0 15px;
+    background-color: var(--clr-blue-yonder);
+    text-align: center;
+}
 
 
 /* Footer Section Styles*/
