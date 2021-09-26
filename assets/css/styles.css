@@ -122,7 +122,7 @@ body {
 
 .container {
     margin-top: 10px;
-    padding: 0 60px 15px;
+    padding: 0 60px 35px;
     background-color: var(--clr-blue-yonder);
     text-align: center;
 }
@@ -136,6 +136,8 @@ body {
 }
 
 .main-project {
+    display: flex;
+    justify-content: center;
     padding: 25px 0 25px 0;
 }
 
@@ -145,6 +147,19 @@ body {
     flex-direction: row;
     justify-content: center;
     justify-content: space-between;
+}
+
+.proj-container {
+    position: relative;
+}
+
+.display-topleft {
+    position: absolute;
+    left: 0;
+    top: 4;
+    padding: 10px;
+    color: black;
+    background-color: var(--clr-hover);
 }
 
 
