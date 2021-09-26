@@ -1,4 +1,8 @@
-/* Colour Scheme  */
+/* 
+
+Colour Scheme Variables 
+
+*/
 
 :root {
     --clr-background: #fcf7f8;
@@ -10,7 +14,14 @@
 }
 
 
-/* General styles for web page */
+/* 
+
+General styles for web page 
+
+*/
+
+
+/* typography and background colour for web page */
 
 body {
     font-family: Verdana, sans-serif;
@@ -29,6 +40,9 @@ body {
     font-size: 30px;
 }
 
+
+/* image fading for project cards */
+
 .img-opacity {
     opacity: 0.6;
 }
@@ -39,7 +53,14 @@ body {
 }
 
 
-/* Navigation Styles */
+/* 
+
+Navigation Styles 
+
+*/
+
+
+/* fixed navigation bar */
 
 .fixed {
     position: fixed;
@@ -70,16 +91,25 @@ body {
     letter-spacing: 4px;
 }
 
+
+/* hamburger menu */
+
 #toggle {
     display: block;
     cursor: pointer;
     padding-bottom: 7px;
 }
 
+
+/* navigation button container */
+
 #items {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+/* navgiation buttons/id's for script.js */
 
 #navItem1,
 #navItem2,
@@ -98,6 +128,9 @@ body {
     letter-spacing: 3px;
 }
 
+
+/* colour for hovering cursor over each anchor element */
+
 #navItem1 a:hover,
 #navItem2 a:hover,
 #navItem3 a:hover,
@@ -105,6 +138,9 @@ body {
     color: var(--clr-hover);
     transition: all 200ms ease-in;
 }
+
+
+/* dropdown list styling for navigation buttons*/
 
 #navItem1.active {
     border-top: 3px solid var(--clr-hover);
@@ -126,10 +162,21 @@ body {
 }
 
 
-/* Banner Section Styles */
+/* 
+
+Banner Section Styles 
+
+*/
 
 
-/* Main Section Styles */
+/* 
+
+Main Section Styles 
+
+*/
+
+
+/* container styling for about sections */
 
 .container {
     margin-top: 65px;
@@ -191,7 +238,11 @@ body {
 }
 
 
-/* Footer Section Styles*/
+/* 
+
+Footer Section Styles
+
+*/
 
 .footer-container {
     margin-top: 10px;
