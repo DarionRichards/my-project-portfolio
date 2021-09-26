@@ -122,9 +122,13 @@ body {
         display: inline-block;
     }
     #navItem1,
-    #navItem2,
-    #navItem3 {
+    #navItem2 {
         padding-right: 30px;
+        display: inline;
+        width: 100%;
+    }
+    #navItem3 {
+        padding-right: 60px;
         display: inline;
         width: 100%;
     }
@@ -132,6 +136,7 @@ body {
         display: none;
     }
     .logo {
+        padding: 0 0 0 60px;
         margin-right: auto;
     }
 }
@@ -220,7 +225,7 @@ body {
 
 .container {
     margin-top: 10px;
-    padding: 0 15px;
+    padding: 0 60px;
     background-color: var(--clr-blue-yonder);
     text-align: center;
 }
