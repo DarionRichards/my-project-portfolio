@@ -1,10 +1,13 @@
 ## **Table of Contents**
 #
-1.  [Introduction](#introduction)
-2.  [Descripton](#description)
-3.  [Deployed Page URL](#deployed-page-url)
+1.  [Deployed Page URL](#deployed-page-url)
+2.  [Introduction](#introduction)
+3.  [Descripton](#description)
 4.  [Demo](#demo)
 
+## **Deployed Link to Portfolio** 
+#
+https://darionrichards.github.io/my-project-portfolio/
 
 ## **Introduction**
 #
@@ -26,9 +29,8 @@ Within this project, I have created a functional portfolio webpage, that contain
 - CSS Variables
 - Colour Schemes (with use of variables)
 - Typography troughout the webpage
-- and more...
 
-## Demo
+## **Demo**
 #
 
 <img src="assets\demo\demo_page.png">
