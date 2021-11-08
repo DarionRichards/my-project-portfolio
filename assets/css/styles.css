@@ -1,76 +1,46 @@
-/* 
-
-Colour Scheme Variables 
-
-*/
+/* Colour Scheme Variables */
 
 :root {
     --clr-background: #fcf7f8;
-    --clr-nav: #5B616A;
-    --clr-footer: #60E1E0;
-    --clr-denim: #275DAD;
-    --clr-hover: #60E1E0;
-    --clr-blue-yonder: #ABA9C3;
+    --clr-nav: #5b616a;
+    --clr-footer: #60e1e0;
+    --clr-denim: #275dad;
+    --clr-hover: #60e1e0;
+    --clr-blue-yonder: #aba9c3;
 }
 
 
-/* 
-
-General styles for web page 
-
-*/
-
-
-/* typography and background colour for web page */
+/* General styles for web page */
 
 body {
     font-family: Verdana, sans-serif;
-    background: var(--clr-blue-yonder)
+    background: var(--clr-blue-yonder);
 }
 
 .heading {
+    margin-bottom: 1rem;
     padding: 15px 35px;
     border-bottom: 5px solid var(--clr-hover);
     letter-spacing: 2px;
-}
-
-.heading h1 {
     display: flex;
     justify-content: flex-end;
     font-size: 30px;
 }
 
 
-/* image fading for project cards */
-
-.img-opacity {
-    opacity: 0.6;
-}
-
-.img-opacity:hover {
-    opacity: 1.0;
-    transition: all 200ms ease-in;
-}
-
-
-/* 
-
-Navigation Styles 
-
-*/
-
-
-/* fixed navigation bar */
+/* Navigation Styles */
 
 .fixed {
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 1rem;
+    background: var(--clr-nav);
+    box-shadow: 0px 0px 50px var(--clr-nav);
     z-index: 1;
 }
 
 .nav-list {
-    padding: 21px;
     background: var(--clr-nav);
     box-shadow: 0px 0px 50px var(--clr-nav);
     display: flex;
@@ -91,32 +61,24 @@ Navigation Styles
     letter-spacing: 4px;
 }
 
-
-/* hamburger menu */
-
 #toggle {
-    display: block;
-    cursor: pointer;
-    padding-bottom: 7px;
+    display: none;
 }
 
-
-/* navigation button container */
-
-#items {
-    display: flex;
-    flex-wrap: wrap;
+.items {
+    display: inline-block;
 }
-
-
-/* navgiation buttons/id's for script.js */
 
 #navItem1,
-#navItem2,
-#navItem3 {
+#navItem2 {
+    padding-right: 30px;
+    display: inline;
     width: 100%;
-    text-align: center;
-    display: none;
+}
+
+#navItem3 {
+    display: inline;
+    width: 100%;
 }
 
 #navItem1 a,
@@ -128,9 +90,6 @@ Navigation Styles
     letter-spacing: 3px;
 }
 
-
-/* colour for hovering cursor over each anchor element */
-
 #navItem1 a:hover,
 #navItem2 a:hover,
 #navItem3 a:hover,
@@ -138,9 +97,6 @@ Navigation Styles
     color: var(--clr-hover);
     transition: all 200ms ease-in;
 }
-
-
-/* dropdown list styling for navigation buttons*/
 
 #navItem1.active {
     border-top: 3px solid var(--clr-hover);
@@ -162,42 +118,25 @@ Navigation Styles
 }
 
 
-/* 
+/* Main Section Styles */
 
-Banner Section Styles 
-
-*/
-
-
-/* 
-
-Main Section Styles 
-
-*/
-
-
-/* container styling for about sections */
+.wrapper {
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+    padding: 2rem;
+}
 
 .container {
-    margin-top: 65px;
-    padding: 0 60px 35px;
-    background-color: var(--clr-blue-yonder);
+    margin-bottom: 1rem;
 }
 
 .about-title {
-    display: flex;
-    width: 100%;
-    padding: 10px 0;
+    margin-bottom: 1rem;
 }
 
 .about-text {
     display: flex;
-}
-
-.project-container {
-    margin-top: 10px;
-    padding: 0 60px 35px;
-    background-color: var(--clr-blue-yonder);
 }
 
 .project-card-container {
@@ -217,11 +156,20 @@ Main Section Styles
 .main-project {
     display: flex;
     justify-content: center;
-    padding: 25px 0 25px 0;
+}
+
+.project-img {
+    width: 100%;
+    opacity: 0.6;
+}
+
+.project-img:hover {
+    opacity: 1;
+    transition: all 200ms ease-in;
 }
 
 .flex-row {
-    padding: 0 0 25px 0;
+    padding-bottom: 25px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -238,11 +186,7 @@ Main Section Styles
 }
 
 
-/* 
-
-Footer Section Styles
-
-*/
+/* Footer Section Styles */
 
 .footer-container {
     margin-top: 10px;
@@ -274,36 +218,25 @@ Footer Section Styles
 }
 
 
-/* Desktop Nav Menu */
-
-@media all and (min-width:1024px) {
-    #items {
-        display: inline-block;
-    }
-    #navItem1,
-    #navItem2 {
-        padding-right: 30px;
-        display: inline;
-        width: 100%;
-    }
-    #navItem3 {
-        padding-right: 60px;
-        display: inline;
-        width: 100%;
-    }
-    #toggle {
-        display: none;
-    }
-    .logo {
-        padding: 0 0 0 60px;
-        margin-right: auto;
-    }
-}
-
-
 /* Tablet Nav Menu */
 
-@media all and (min-width:769px) {
+@media all and (max-width: 769px) {
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #navItem1,
+    #navItem2,
+    #navItem3 {
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    #toggle {
+        display: block;
+        cursor: pointer;
+        padding-bottom: 7px;
+    }
     .nav-list.active {
         justify-content: center;
         align-items: center;
@@ -331,17 +264,20 @@ Footer Section Styles
         width: 18px;
     }
     .bars::before {
-        top: 5px
+        top: 5px;
     }
     .bars::after {
-        top: -5px
+        top: -5px;
     }
 }
 
 
 /* Mobile Nav Menu */
 
-@media all and (min-width:320px) {
+@media all and (max-width: 320px) {
+    .heading {
+        justify-content: center;
+    }
     .nav-list {
         justify-content: center;
     }
@@ -368,9 +304,9 @@ Footer Section Styles
         width: 18px;
     }
     .bars::before {
-        top: 5px
+        top: 5px;
     }
     .bars::after {
-        top: -5px
+        top: -5px;
     }
 }
