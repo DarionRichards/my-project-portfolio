@@ -201,8 +201,8 @@ body {
 }
 
 .footer-container p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: 15px;
     font-weight: bold;
 }
@@ -211,8 +211,20 @@ body {
     text-decoration: none;
 }
 
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
 .icon {
-    width: 20px;
+    opacity: 0.7;
+    width: 2rem;
+}
+
+.icon:hover {
+    opacity: 1;
 }
 
 
