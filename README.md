@@ -1,7 +1,5 @@
 ## **Table of Contents**
 
-#
-
 1.  [Deployed Page URL](#deployed-page-url)
 2.  [Introduction](#introduction)
 3.  [Descripton](#description)
@@ -9,19 +7,13 @@
 
 ## **Deployed Link to Portfolio**
 
-#
-
 https://darionrichards.github.io/my-project-portfolio/
 
 ## **Introduction**
 
-#
-
 In this project, I am creating a functional portfolio webpage, that will show my completed projects to prove my skills to employers
 
 ## **Description**
-
-#
 
 Within this project, I have created a functional portfolio webpage, that contains the use of:
 
@@ -37,7 +29,5 @@ Within this project, I have created a functional portfolio webpage, that contain
 - Typography troughout the webpage
 
 ## **Demo**
-
-#
 
 <img src="./assets/demo/demo.png">
