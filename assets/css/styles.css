@@ -189,13 +189,6 @@ body {
     transition: all 200ms ease-in;
 }
 
-.display-topleft {
-    position: absolute;
-    padding: 10px;
-    color: black;
-    background-color: var(--clr-hover);
-}
-
 .project-card-body {
     display: flex;
     flex-direction: column;
