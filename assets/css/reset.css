@@ -43,3 +43,10 @@ ul {
 a {
     text-decoration: none;
 }
+
+
+/* Bootstrap Reset */
+
+.container {
+    margin: unset !important;
+}
