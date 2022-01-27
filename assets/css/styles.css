@@ -24,10 +24,11 @@ body {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700 !important;
     padding-bottom: 1rem;
     border-bottom: 3px solid var(--clr-border);
+    margin-bottom: unset;
 }
 
 h2 {
@@ -66,6 +67,7 @@ i {
     flex-direction: column;
     width: 70%;
     letter-spacing: 2px;
+    margin-bottom: 3rem;
 }
 
 .wrapper {
@@ -78,8 +80,16 @@ i {
     border-top: 1px solid black !important;
 }
 
+.start {
+    text-align: start;
+}
+
 .centre {
     text-align: center;
+}
+
+.end {
+    text-align: end;
 }
 
 
@@ -155,12 +165,12 @@ i {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 1rem 4rem;
-    margin: 2rem;
+    margin-left: 2rem;
     background: #e9ecf3;
     border-radius: 1rem;
     box-shadow: 0 0 15px rgb(97, 97, 97);
-    width: 22rem;
-    height: 40rem;
+    width: 20rem;
+    height: 35rem;
 }
 
 .profile-card h3 {
@@ -195,30 +205,30 @@ i {
 }
 
 
-/* Project Section */
+/* Group Project Section */
 
-.project-section {
+.group-project-section {
     background: linear-gradient( 0deg, rgba(177, 167, 166, 1) 0%, rgba(211, 211, 211, 1) 50%, rgba(245, 243, 244, 1) 100%);
 }
 
-.project-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
+.group-project-section .heading {
+    margin-left: auto;
 }
 
 .main-project {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
     margin-bottom: 2rem;
 }
 
 .main-project-card {
     border: 2px solid var(--clr-border);
     position: relative;
-    width: 700px;
-    height: auto;
+    width: 15rem;
+    height: 20rem;
+    margin-bottom: 2rem;
     border-radius: 0.3rem;
     box-shadow: 0 0 10px 5px rgb(119, 119, 119);
 }
@@ -235,7 +245,8 @@ i {
 .project-card {
     border: 1px solid var(--clr-border);
     position: relative;
-    width: 500px;
+    width: 15rem;
+    height: 15rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 15px 5px rgb(119, 119, 119);
 }
@@ -243,6 +254,7 @@ i {
 .project-img {
     z-index: -1;
     width: 100%;
+    height: 100%;
     opacity: 0.6;
     border-radius: 0.5rem;
     border-bottom: 1px solid black;
@@ -258,7 +270,7 @@ i {
     flex-direction: column;
     justify-content: space-evenly;
     width: auto;
-    height: 250px;
+    height: auto;
     padding: 1rem;
     text-align: left;
     border-radius: 0.5rem;
@@ -328,6 +340,9 @@ i {
 }
 
 @media all and (min-width: 991px) {
+    .heading h1 {
+        font-size: 35px;
+    }
     .border-top {
         border-top: unset !important;
     }
@@ -341,5 +356,53 @@ i {
     }
     .navbar-nav {
         padding: unset;
+    }
+}
+
+@media all and (min-width: 1600px) {
+    .heading h1 {
+        font-size: 45px;
+    }
+    .wrapper {
+        padding-right: 7rem;
+        padding-left: 7rem;
+    }
+    .profile-card {
+        width: 30rem;
+        height: 40rem;
+        margin-left: 7rem;
+    }
+    .main-project-card {
+        width: 20rem;
+        height: 25rem;
+    }
+}
+
+@media all and (min-width: 2000px) {
+    .heading h1 {
+        font-size: 50px;
+    }
+    .wrapper {
+        padding-right: 10rem;
+        padding-left: 10rem;
+    }
+    .profile-card {
+        width: 35rem;
+        height: 45rem;
+        margin-left: 20rem;
+    }
+    .main-project-card {
+        width: 25rem;
+        height: 30rem;
+    }
+}
+
+@media all and (min-width: 2500px) {
+    .profile-card {
+        margin-left: 30rem;
+    }
+    .main-project-card {
+        width: 30rem;
+        height: 35rem;
     }
 }
