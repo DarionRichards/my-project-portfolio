@@ -12,7 +12,7 @@
     --clr-button: #2b2d42;
     --clr-button-hover: #5a5d76;
     --clr-hover: #98c1d9;
-    --clr-footer: #293241;
+    --clr-footer: #292929;
 }
 
 
@@ -32,22 +32,22 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 500 !important;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700 !important;
 }
 
 h4 {
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 400 !important;
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300 !important;
 }
 
@@ -55,6 +55,10 @@ h6 {
     color: grey;
     font-size: 15px;
     font-weight: 300 !important;
+}
+
+p {
+    font-size: 17px;
 }
 
 i {
@@ -150,7 +154,6 @@ i {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background: rgb(63, 55, 201);
     background: linear-gradient( 0deg, rgb(63, 55, 201) 0%, rgba(67, 97, 238, 1) 33%, rgba(72, 149, 239, 1) 66%, rgba(76, 201, 240, 1) 100%);
     width: 100%;
 }
@@ -220,17 +223,39 @@ i {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 2rem;
+    gap: 3rem;
 }
 
 .main-project-card {
-    border: 2px solid var(--clr-border);
     position: relative;
-    width: 15rem;
+    width: 17rem;
     height: 20rem;
-    margin-bottom: 2rem;
     border-radius: 0.3rem;
     box-shadow: 0 0 10px 5px rgb(119, 119, 119);
+}
+
+.main-project-card img {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    border-radius: 0.5rem;
+}
+
+.main-project-card img:hover {
+    opacity: 0.6;
+    transition: all 200ms ease-in;
+}
+
+
+/* Individual Projects Section */
+
+.individual-project-section {
+    background: linear-gradient( 0deg, rgba(199, 125, 255, 1) 0%, rgba(157, 78, 221, 1) 75%, rgba(123, 44, 191, 1) 100%);
+}
+
+.individual-project-section h1 {
+    color: white;
 }
 
 .project-card-container {
@@ -238,39 +263,39 @@ i {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 3rem;
+    gap: 1rem;
     margin-bottom: 1rem;
 }
 
 .project-card {
-    border: 1px solid var(--clr-border);
-    position: relative;
-    width: 15rem;
-    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: unset;
     border-radius: 0.5rem;
-    box-shadow: 0 0 15px 5px rgb(119, 119, 119);
+    box-shadow: 0 0 20px #781fdf;
 }
 
 .project-img {
     z-index: -1;
     width: 100%;
-    height: 100%;
-    opacity: 0.6;
+    opacity: 1;
     border-radius: 0.5rem;
     border-bottom: 1px solid black;
 }
 
 .project-img:hover {
-    opacity: 1;
+    opacity: 0.6;
     transition: all 200ms ease-in;
 }
 
 .project-card-body {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    width: auto;
-    height: auto;
+    justify-content: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
     padding: 1rem;
     text-align: left;
     border-radius: 0.5rem;
@@ -339,6 +364,21 @@ i {
     opacity: 1;
 }
 
+@media all and (max-width: 700px) {
+    /* Group Projects Styling */
+    .project-card {
+        height: 100%;
+    }
+}
+
+@media all and (min-width: 768px) {
+    /* Group Projects Styling */
+    .main-project-card {
+        width: 25rem;
+        height: 30rem;
+    }
+}
+
 @media all and (min-width: 991px) {
     .heading h1 {
         font-size: 35px;
@@ -357,6 +397,14 @@ i {
     .navbar-nav {
         padding: unset;
     }
+    /* Group Projects Styling */
+    .main-project {
+        gap: 2rem;
+    }
+    .main-project-card {
+        width: 30rem;
+        height: 35rem;
+    }
 }
 
 @media all and (min-width: 1600px) {
@@ -373,8 +421,8 @@ i {
         margin-left: 7rem;
     }
     .main-project-card {
-        width: 20rem;
-        height: 25rem;
+        width: 25rem;
+        height: 30rem;
     }
 }
 
@@ -391,9 +439,12 @@ i {
         height: 45rem;
         margin-left: 20rem;
     }
+    .main-project {
+        gap: 1rem;
+    }
     .main-project-card {
-        width: 25rem;
-        height: 30rem;
+        width: 30rem;
+        height: 35rem;
     }
 }
 
