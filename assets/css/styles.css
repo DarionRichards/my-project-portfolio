@@ -3,15 +3,12 @@
 /* Colour Scheme Variables */
 
 :root {
-    --clr-navigation-bar: #3d5a80;
+    --clr-navigation-bar: #292929;
     --clr-navigation-btn: #edf2f4;
     --clr-background: #dae1ee;
-    --clr-about-background: #4cc9f0;
-    --clr-about-secondary-background: #4895ef;
-    --clr-about-third-background: #4361ee;
     --clr-projects-background: #e0fbfc;
     --clr-skills-background: #ff6b6b;
-    --clr-border: #8d99ae;
+    --clr-border: #aeb5c0;
     --clr-button: #2b2d42;
     --clr-button-hover: #5a5d76;
     --clr-hover: #98c1d9;
@@ -57,6 +54,11 @@ h6 {
     color: grey;
     font-size: 15px;
     font-weight: 300 !important;
+}
+
+i {
+    font-size: 40px;
+    margin-right: 0.6rem;
 }
 
 .heading {
@@ -125,9 +127,11 @@ h6 {
 }
 
 
-/* Main Section Styles */
+/* About Me Section */
 
-.container {
+.about-title,
+.project-card-title,
+.project-card-text {
     margin-bottom: 1rem;
 }
 
@@ -137,12 +141,8 @@ h6 {
     justify-content: space-around;
     align-items: center;
     background: rgb(63, 55, 201);
-    background: linear-gradient( 0deg, rgba(63, 55, 201, 1) 0%, rgba(67, 97, 238, 1) 33%, rgba(72, 149, 239, 1) 66%, rgba(76, 201, 240, 1) 100%);
+    background: linear-gradient( 0deg, rgb(63, 55, 201) 0%, rgba(67, 97, 238, 1) 33%, rgba(72, 149, 239, 1) 66%, rgba(76, 201, 240, 1) 100%);
     width: 100%;
-}
-
-.about-title {
-    margin-bottom: 1rem;
 }
 
 .about-text {
@@ -154,24 +154,50 @@ h6 {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 1rem;
+    padding: 2rem 1rem 4rem;
     margin: 2rem;
-    background: #f0efeb;
+    background: #e9ecf3;
     border-radius: 1rem;
-    box-shadow: 0 0 15px 10px rgb(179, 179, 179);
+    box-shadow: 0 0 15px rgb(97, 97, 97);
     width: 22rem;
     height: 40rem;
 }
 
+.profile-card h3 {
+    color: rgba(72, 149, 239, 1);
+}
+
+.profile-card h6 {
+    color: gray;
+    margin: unset;
+    padding: 0.3rem;
+}
+
 .profile-img {
+    border: 3px solid rgb(102, 102, 102);
     border-radius: 100%;
     margin-bottom: 1.5rem;
-    box-shadow: 0 0 15px 15px rgb(179, 179, 179);
+    box-shadow: 0 0 10px 3px rgba(72, 149, 239, 1);
     width: 60%;
 }
 
+.profile-location,
+.profile-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-location i,
+.profile-status i {
+    font-size: 20px;
+    margin-right: 0.5rem;
+}
+
+
+/* Project Section */
+
 .project-section {
-    background: rgb(177, 167, 166);
     background: linear-gradient( 0deg, rgba(177, 167, 166, 1) 0%, rgba(211, 211, 211, 1) 50%, rgba(245, 243, 244, 1) 100%);
 }
 
@@ -237,11 +263,6 @@ h6 {
     text-align: left;
     border-radius: 0.5rem;
     background-color: var(--clr-background);
-}
-
-.project-card-title,
-.project-card-text {
-    margin-bottom: 1rem;
 }
 
 .card-button-container {
