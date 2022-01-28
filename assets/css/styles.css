@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700 !important;
     padding-bottom: 1rem;
     border-bottom: 3px solid var(--clr-border);
@@ -33,12 +33,12 @@ h1 {
 
 h2 {
     font-size: 25px;
-    font-weight: 500 !important;
+    font-weight: 700 !important;
 }
 
 h3 {
     font-size: 20px;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
 }
 
 h4 {
@@ -58,20 +58,25 @@ h6 {
 }
 
 p {
-    font-size: 17px;
+    font-size: 20px;
 }
 
-i {
-    font-size: 40px;
-    margin-right: 0.6rem;
+i,
+.profile-card-links img {
+    font-size: 30px;
+    margin-right: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+i:hover,
+.profile-card-links img:hover {
+    transform: scale(1.5);
 }
 
 .heading {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
+    width: 100%;
     letter-spacing: 2px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .wrapper {
@@ -151,10 +156,12 @@ i {
 
 .about-me-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    align-items: flex-end;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient( 0deg, rgb(63, 55, 201) 0%, rgba(67, 97, 238, 1) 33%, rgba(72, 149, 239, 1) 66%, rgba(76, 201, 240, 1) 100%);
+    background: linear-gradient( 0deg, rgb(67, 97, 238, 1) 0%, rgba(67, 97, 238, 1) 33%, rgba(72, 149, 239, 1) 66%, rgba(76, 201, 240, 1) 100%);
     width: 100%;
 }
 
@@ -168,16 +175,16 @@ i {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 1rem 4rem;
-    margin-left: 2rem;
     background: #e9ecf3;
     border-radius: 1rem;
     box-shadow: 0 0 15px rgb(97, 97, 97);
-    width: 20rem;
+    width: 15rem;
     height: 35rem;
 }
 
-.profile-card h3 {
-    color: rgba(72, 149, 239, 1);
+.profile-card h2 {
+    color: rgb(47, 135, 235);
+    margin-bottom: 1rem;
 }
 
 .profile-card h6 {
@@ -192,6 +199,11 @@ i {
     margin-bottom: 1.5rem;
     box-shadow: 0 0 10px 3px rgba(72, 149, 239, 1);
     width: 60%;
+    transition: all 0.2s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
 }
 
 .profile-location,
@@ -205,6 +217,18 @@ i {
 .profile-status i {
     font-size: 20px;
     margin-right: 0.5rem;
+}
+
+.profile-card-skills {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+}
+
+.profile-card-links {
+    display: inline-flex;
+    font-size: 40px;
+    color: black;
 }
 
 
@@ -325,13 +349,14 @@ i {
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     display: block;
+    transition: all 0.2s ease-in-out;
 }
 
 .button:hover {
     background-position: right center;
-    /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
+    transform: scale(1.1);
 }
 
 
@@ -339,8 +364,9 @@ i {
 
 .footer-container {
     padding: 0 15px;
-    background-color: var(--clr-footer);
+    background-color: var(--clr-navigation-bar);
     text-align: center;
+    color: white;
 }
 
 .footer-container::before,
@@ -368,27 +394,37 @@ i {
     gap: 1.5rem;
 }
 
-.icon {
-    opacity: 0.7;
-    width: 2rem;
-}
-
-.icon:hover {
-    opacity: 1;
-}
-
 @media all and (min-width: 320px) {
     /* Group Projects Styling */
     .main-project-card {
         width: 20rem;
         height: 25rem;
     }
+    /* Individual Projects Styling */
     .project-card {
         width: 235px;
     }
 }
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 375px) {
+    /* Individual Projects Styling */
+    .project-card {
+        width: 17rem;
+    }
+}
+
+@media all and (min-width: 650px) {
+    /* About Me Styling */
+    .about-me-section {
+        flex-direction: row;
+    }
+    .profile-card {
+        width: 200rem;
+        margin-left: 2rem;
+    }
+    .profile-card h2 {
+        font-size: 30px;
+    }
     /* Group Projects Styling */
     .project-card img {
         height: 10rem;
@@ -408,6 +444,10 @@ i {
 }
 
 @media all and (min-width: 991px) {
+    /* General Styles */
+    i {
+        font-size: 40px;
+    }
     .heading h1 {
         font-size: 35px;
     }
@@ -425,6 +465,10 @@ i {
     .navbar-nav {
         padding: unset;
     }
+    /* About Me Styling */
+    .profile-card {
+        width: 120rem;
+    }
     /* Group Projects Styling */
     .main-project {
         gap: 2rem;
@@ -436,6 +480,9 @@ i {
 }
 
 @media all and (min-width: 1400px) {
+    .profile-card h2 {
+        font-size: 35px;
+    }
     .project-card {
         width: 24rem;
     }
@@ -456,13 +503,17 @@ i {
         padding-left: 7rem;
     }
     .profile-card {
-        width: 30rem;
+        width: 100rem;
         height: 40rem;
         margin-left: 7rem;
     }
 }
 
 @media all and (min-width: 2000px) {
+    /* General Styles */
+    i {
+        font-size: 50px;
+    }
     .heading h1 {
         font-size: 50px;
     }
@@ -471,10 +522,14 @@ i {
         padding-left: 10rem;
     }
     .profile-card {
-        width: 35rem;
+        width: 125rem;
         height: 45rem;
         margin-left: 20rem;
     }
+    .profile-card h2 {
+        font-size: 40px;
+    }
+    /* Group Projects Styling */
     .main-project {
         gap: 1rem;
     }
