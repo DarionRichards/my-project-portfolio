@@ -228,8 +228,8 @@ i {
 
 .main-project-card {
     position: relative;
-    width: 17rem;
-    height: 20rem;
+    width: 10rem;
+    height: 15rem;
     border-radius: 0.3rem;
     box-shadow: 0 0 10px 5px rgb(119, 119, 119);
 }
@@ -270,7 +270,7 @@ i {
 .project-card {
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 20rem;
     height: unset;
     border-radius: 0.5rem;
     box-shadow: 0 0 20px #781fdf;
@@ -279,13 +279,14 @@ i {
 .project-img {
     z-index: -1;
     width: 100%;
+    height: 10rem;
     opacity: 1;
     border-radius: 0.5rem;
     border-bottom: 1px solid black;
 }
 
 .project-img:hover {
-    opacity: 0.6;
+    opacity: 0.8;
     transition: all 200ms ease-in;
 }
 
@@ -304,21 +305,33 @@ i {
 
 .card-button-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     justify-content: space-evenly;
 }
 
 .button {
+    background-image: linear-gradient( to right, #da22ff 0%, #9733ee 51%, #da22ff 100%);
+}
+
+.button {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
     color: white;
-    background-color: var(--clr-button);
-    padding: 10px;
-    border-radius: 5px;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
 }
 
 .button:hover {
-    color: white;
-    background-color: var(--clr-button-hover);
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
 }
 
 
@@ -364,10 +377,21 @@ i {
     opacity: 1;
 }
 
-@media all and (max-width: 700px) {
+@media all and (min-width: 320px) {
     /* Group Projects Styling */
+    .main-project-card {
+        width: 20rem;
+        height: 25rem;
+    }
     .project-card {
-        height: 100%;
+        width: 235px;
+    }
+}
+
+@media all and (min-width: 700px) {
+    /* Group Projects Styling */
+    .project-card img {
+        height: 10rem;
     }
 }
 
@@ -376,6 +400,10 @@ i {
     .main-project-card {
         width: 25rem;
         height: 30rem;
+    }
+    /* Individual Project Styling */
+    .project-card {
+        width: 20rem;
     }
 }
 
@@ -407,6 +435,18 @@ i {
     }
 }
 
+@media all and (min-width: 1400px) {
+    .project-card {
+        width: 24rem;
+    }
+    .project-card img {
+        height: 20rem;
+    }
+    .card-button-container {
+        flex-direction: row;
+    }
+}
+
 @media all and (min-width: 1600px) {
     .heading h1 {
         font-size: 45px;
@@ -419,10 +459,6 @@ i {
         width: 30rem;
         height: 40rem;
         margin-left: 7rem;
-    }
-    .main-project-card {
-        width: 25rem;
-        height: 30rem;
     }
 }
 
