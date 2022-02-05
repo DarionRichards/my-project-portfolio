@@ -6,8 +6,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+
     <title>Darion Richards</title>
 </head>
 
@@ -15,119 +17,430 @@
 
 <body>
     <!--Header Section-->
-
     <header id="home">
-        <nav class="fixed">
-            <ul id="navlist" class="nav-list">
-                <li class="logo"><a href="#home">Darion Richards | Portfolio</a></li>
-                <li id="toggle"><span class="bars"></span></li>
-                <ul id="items" class="items">
-                    <li id="navItem1"><a href="#about-me">About Me</a></li>
-                    <li id="navItem2"><a href="#projects">Projects</a></li>
-                    <li id="navItem3"><a href="#contact-me">Contact Me</a></li>
-                </ul>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark nav-background">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-border-right text-white" href="/">
+						PORTFOLIO
+					</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+                <div class="collapse navbar-collapse border-top" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">ABOUT ME
+								</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">PROJECTS
+								</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">
+									CONTACT ME
+								</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <!--Banner Section-->
-
-    <section class="hero">
-        <!-- <img src="./assets/images/banner-portfolio.jpg" alt="banner-portfolio" /> -->
-    </section>
-
     <!--Main Content Section-->
-
     <main>
-        <section class="wrapper">
-            <section id="about-me" class="container">
+        <section>
+            <section id="about-me" class="about-me-section wrapper">
+                <div>
+                    <div class="heading">
+                        <h1>ABOUT ME</h1>
+                    </div>
+                    <p class="about-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus recusandae amet nostrum odit, ut unde non sint, quia sed inventore odio, delectus iure! Eligendi vitae fuga blanditiis accusamus tempore! Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Nihil natus recusandae amet nostrum odit, ut unde non sint, quia sed inventore odio, delectus iure! Eligendi vitae fuga blanditiis accusamus tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus recusandae
+                        amet nostrum odit, ut unde non sint, quia sed inventore odio, delectus iure! Eligendi vitae fuga blanditiis accusamus tempore!
+                    </p>
+                </div>
+
+                <section class="profile-card">
+                    <div class="centre">
+                        <img class="profile-img" src="./assets/images/profile-img.png" />
+                        <h2>Darion Richards</h2>
+                        <div class="profile-status">
+                            <i class="fas fa-briefcase"></i>
+                            <h6>Full Stack Developer</h6>
+                        </div>
+                        <div class="profile-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h6>Birmingham, UK</h6>
+                        </div>
+                    </div>
+                    <div class="profile-card-skills">
+                        <i class="fab fa-html5 gradient"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js"></i>
+                        <i class="fab fa-node"></i>
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="profile-card-links">
+                        <a href="https://github.com/DarionRichards">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/darionrichards/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Group Projects -->
+            <section id="projects" class="group-project-section wrapper">
                 <section class="heading">
-                    <h1>About Me</h1>
+                    <h1 class="end">GROUP PROJECTS</h1>
                 </section>
 
-                <h2 class="about-title">Title</h2>
-
-                <p class="about-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus recusandae amet nostrum odit, ut unde non sint, quia sed inventore odio, delectus iure! Eligendi vitae fuga blanditiis accusamus tempore! Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Nihil natus recusandae amet nostrum odit, ut unde non sint, quia sed inventore odio, delectus iure! Eligendi vitae fuga blanditiis accusamus tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus recusandae
-                    amet nostrum odit, ut unde non sint, quia sed inventore odio, delectus iure! Eligendi vitae fuga blanditiis accusamus tempore!
-                </p>
+                <!--Projects-->
+                <section class="main-project">
+                    <section class="main-project-card">
+                        <a href="https://darionrichards.github.io/readers-revival/">
+                            <img class="project-img" src="./assets/images/readers-revival-screenshot.png" alt="Horiseon Project Demo Example" width="700" height="700" />
+                        </a>
+                    </section>
+                    <section class="main-project-card">
+                        <a href="https://darionrichards.github.io/readers-revival/">
+                            <img class="project-img" src="./assets/images/fitness-app.png" alt="Horiseon Project Demo Example" width="700" height="700" />
+                        </a>
+                    </section>
+                    <section class="main-project-card">
+                        <a href="https://darionrichards.github.io/readers-revival/">
+                            <img class="project-img" src="./assets/images/readers-revival-screenshot.png" alt="Horiseon Project Demo Example" width="700" height="700" />
+                        </a>
+                    </section>
+                </section>
             </section>
 
             <!-- Projects -->
-
-            <section id="projects">
+            <section id="projects" class="individual-project-section wrapper">
                 <section class="heading">
-                    <h1>Projects</h1>
+                    <h1 class="start">INDIVIDUAL PROJECTS</h1>
                 </section>
 
-                <section class="project-container">
-                    <section class="main-project">
-                        <section class="project-card">
-                            <div class="display-topleft">Horiseon Project (Hover)</div>
-                            <a href="https://github.com/DarionRichards/horiseon-semantic-refactoring"><img class="project-img" src="./assets/images/01-html-css-git-homework-demo.png" alt="Horiseon Project Demo Example" />
-                            </a>
-                        </section>
+                <section class="project-card-container">
+                    <!--Project Card #1-->
+                    <section class="project-card">
+                        <a href="https://darionrichards.github.io/quiz-challenge/" style="background-color: gray">
+                            <img class="project-img" src="./assets/images/quiz-challenge-screenshot.png" alt="Screenshot of Weather Dashbord Project" width="250" height="350" />
+                        </a>
+                        <div class="project-card-body">
+                            <div>
+                                <h3 class="project-card-title">Coding Quiz Challenge</h3>
+                                <p class="project-card-text">
+                                    A dynamic web application where users answer a series of questions and stores their score after the questions have been answered. After the user has finished with the quiz, all their scores will be stored.
+                                </p>
+                            </div>
+                            <div class="card-button-container">
+                                <a href="https://darionrichards.github.io/quiz-challenge/" class="button">Deployed App
+									</a>
+                                <a href="https://github.com/DarionRichards/quiz-challenge" class="button">GitHub Repository
+									</a>
+                            </div>
+                        </div>
                     </section>
 
-                    <section class="project-card-container">
-                        <section class="project-card">
-                            <div class="display-topleft">Project 1</div>
-                            <a href="#"><img class="project-img" src="https://via.placeholder.com/250" alt="Project placeholder" />
-                            </a>
-                        </section>
-                        <section class="project-card">
-                            <div class="display-topleft">Project 2</div>
-                            <a href="#"><img class="project-img" src="https://via.placeholder.com/250" alt="Project placeholder" />
-                            </a>
-                        </section>
-                        <section class="project-card">
-                            <div class="display-topleft">Project 3</div>
-                            <a href="#"><img class="project-img" src="https://via.placeholder.com/250" alt="Project placeholder" />
-                            </a>
-                        </section>
+                    <!--Project Card #2-->
+                    <section class="project-card">
+                        <a href="https://darionrichards.github.io/week-day-planner/" style="background-color: gray">
+                            <img class="project-img" src="./assets/images/week-day-planner-screenshot.png" alt="Screenshot of Weather Dashbord Project" width="250" height="350" />
+                        </a>
+                        <div class="project-card-body">
+                            <div>
+                                <h3 class="project-card-title">Week Day Planner</h3>
+                                <p class="project-card-text">
+                                    A dynamic web application that helps a user plan out their day-to-day tasks. The daily planner is to assist users throughout their work day.
+                                </p>
+                            </div>
+                            <div class="card-button-container">
+                                <a href="https://darionrichards.github.io/week-day-planner/" class="button">Deployed App</a
+									>
+									<a
+										href="https://github.com/DarionRichards/week-day-planner"
+										class="button"
+										>GitHub Repository</a
+									>
+								</div>
+							</div>
+						</section>
 
-                        <section class="project-card">
-                            <div class="display-topleft">Project 4</div>
-                            <a href="#"><img class="project-img" src="https://via.placeholder.com/250" alt="Project placeholder" />
-                            </a>
-                        </section>
-                        <section class="project-card">
-                            <div class="display-topleft">Project 5</div>
-                            <a href="#"><img class="project-img" src="https://via.placeholder.com/250" alt="Project placeholder" />
-                            </a>
-                        </section>
-                        <section class="project-card">
-                            <div class="display-topleft">Project 6</div>
-                            <a href="#"><img class="project-img" src="https://via.placeholder.com/250" alt="Project placeholder" />
-                            </a>
-                        </section>
+						<!--Project Card #3-->
+						<section class="project-card">
+							<a
+								href="https://darionrichards.github.io/weather-dashboard/"
+								style="background-color: gray"
+							>
+								<img
+									class="project-img"
+									src="./assets/images/weather-dashboard-screenshot.png"
+									alt="Screenshot of Weather Dashbord Project"
+									width="250"
+									height="350"
+								/>
+							</a>
+                                <div class="project-card-body">
+                                    <div>
+                                        <h3 class="project-card-title">Weather Dashboard</h3>
+                                        <p class="project-card-text">
+                                            A dynamic web application where users can search a specific location, which will force web application to fetch data from the OpenWeatherMap API.
+                                        </p>
+                                    </div>
+                                    <div class="card-button-container">
+                                        <a href="https://darionrichards.github.io/weather-dashboard/" class="button">Deployed App</a
+									>
+									<a
+										href="https://github.com/DarionRichards/weather-dashboard"
+										class="button"
+										>GitHub Repository</a
+									>
+								</div>
+							</div>
+						</section>
+
+						<!--Project Card #4-->
+						<section class="project-card">
+							<a
+								href="https://darionrichards.github.io/random-password-gen/"
+								style="background-color: gray"
+							>
+								<img
+									class="project-img"
+									src="./assets/images/random-password-gen-screenshot.png"
+									alt="Screenshot of Weather Dashbord Project"
+									width="250"
+									height="350"
+								/>
+							</a>
+                                        <div class="project-card-body">
+                                            <div>
+                                                <h3 class="project-card-title">Random Password Generator</h3>
+                                                <p class="project-card-text">
+                                                    A functional random password generator, which generates a random password. The user is able to customize their password to their needs, where they can choose, the password length; to inculude capital letters, lowercase letters, numbers and symbols.
+                                                </p>
+                                            </div>
+                                            <div class="card-button-container">
+                                                <a href="https://darionrichards.github.io/random-password-gen/" class="button">Deployed App</a
+									>
+									<a
+										href="https://github.com/DarionRichards/random-password-gen"
+										class="button"
+										>GitHub Repository</a
+									>
+								</div>
+							</div>
+						</section>
+
+						<!--Project Card #5-->
+						<section class="project-card">
+							<a
+								href="https://github.com/DarionRichards/README-generator"
+								style="background-color: gray"
+							>
+								<img
+									class="project-img"
+									src="./assets/images/README-GENERATOR.png"
+									alt="Screenshot of Weather Dashbord Project"
+									width="250"
+									height="350"
+								/>
+							</a>
+                                                <div class="project-card-body">
+                                                    <div>
+                                                        <h3 class="project-card-title">README.md File Generator</h3>
+                                                        <p class="project-card-text">
+                                                            Create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer Package.
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-button-container">
+                                                        <a href="https://github.com/DarionRichards/README-generator" class="button">GitHub Repository</a
+									>
+								</div>
+							</div>
+						</section>
+
+						<!--Project Card #6-->
+						<section class="project-card">
+							<a
+								href="https://github.com/DarionRichards/team-profile-generator"
+								style="background-color: gray"
+							>
+								<img
+									class="project-img"
+									src="./assets/images/Team-profile-gen.png"
+									alt="Screenshot of Weather Dashbord Project"
+									width="250"
+									height="350"
+								/>
+							</a>
+                                                        <div class="project-card-body">
+                                                            <div>
+                                                                <h3 class="project-card-title">Team Profile Generator</h3>
+                                                                <p class="project-card-text">
+                                                                    This application will automatically generate a HTML file, relating to the information a user has entered in order to build their team profiles. The file generated will allow quick access to social links, such as GitHub profiles and Emails to each team
+                                                                    member included.
+                                                                </p>
+                                                            </div>
+                                                            <div class="card-button-container">
+                                                                <a href="https://github.com/DarionRichards/team-profile-generator" class="button">GitHub Repository</a
+									>
+								</div>
+							</div>
+						</section>
+
+						<!--Project Card #7-->
+						<section class="project-card">
+							<a
+								href="http://still-taiga-68575.herokuapp.com/"
+								style="background-color: gray"
+							>
+								<img
+									class="project-img"
+									src="./assets/images/note-taker.png"
+									alt="Screenshot of Weather Dashbord Project"
+									width="250"
+									height="350"
+								/>
+							</a>
+                                                                <div class="project-card-body">
+                                                                    <div>
+                                                                        <h3 class="project-card-title">Note Taking Application</h3>
+                                                                        <p class="project-card-text">
+                                                                            A Note Taking Application that can be used to write and save notes, in order to help organise a day or even week.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="card-button-container">
+                                                                        <a href="http://still-taiga-68575.herokuapp.com/" class="button">Deployed App</a
+									>
+									<a
+										href="https://github.com/DarionRichards/note-taker"
+										class="button"
+										>GitHub Repository</a
+									>
+								</div>
+							</div>
+						</section>
+
+						<!--Project Card #8-->
+						<section class="project-card">
+							<a
+								href="https://github.com/DarionRichards/employee-tracker"
+								style="background-color: gray"
+							>
+								<img
+									class="project-img"
+									src="./assets/images/employee-tracker.png"
+									alt="Screenshot of Weather Dashbord Project"
+									width="250"
+									height="350"
+								/>
+							</a>
+                                                                        <div class="project-card-body">
+                                                                            <div>
+                                                                                <h3 class="project-card-title">Employee Tracker</h3>
+                                                                                <p class="project-card-text">
+                                                                                    For this project, I have created a command line (CRUD) application, where users are able to Add, Read, Update and Delete employees from a MySQL Database.
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="card-button-container">
+                                                                                <a href="https://github.com/DarionRichards/employee-tracker" class="button">GitHub Repository</a
+									>
+								</div>
+							</div>
+						</section>
+
+						<!--Project Card #9-->
+						<section class="project-card">
+							<a
+								href="https://github.com/DarionRichards/ecommerce-back-end"
+								style="background-color: gray"
+							>
+								<img
+									class="project-img"
+									src="./assets/images/ecommerce-back-end.png"
+									alt="Screenshot of Weather Dashbord Project"
+									width="250"
+									height="350"
+								/>
+							</a>
+                                                                                <div class="project-card-body">
+                                                                                    <div>
+                                                                                        <h3 class="project-card-title">E-Commerce Back-end</h3>
+                                                                                        <p class="project-card-text">
+                                                                                            I have been approached to create a E-Commerce Back End where I will be configuring a working Express.js API to use Sequelize to interact with a MySQL database.
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    <div class="card-button-container">
+                                                                                        <a href="https://github.com/DarionRichards/ecommerce-back-end" class="button">GitHub Repository</a
+									>
+								</div>
+							</div>
+						</section>
+
+						<!--Project Card #10-->
+						<section class="project-card">
+							<a
+								href="https://github.com/DarionRichards/cms-blog-site"
+								style="background-color: gray"
+							>
+								<img
+									class="project-img"
+									src="./assets/images/blog-site.png"
+									alt="Screenshot of Weather Dashbord Project"
+									width="250"
+									height="350"
+								/>
+							</a>
+                                                                                        <div class="project-card-body">
+                                                                                            <div>
+                                                                                                <h3 class="project-card-title">CMS Blog</h3>
+                                                                                                <p class="project-card-text">
+                                                                                                    This project will allow users to read, create, edit and delete blogs, as well as being able to comment on other blogs they discover. In order to access these features, users will need to be signed in where they can access their personal dashboard with
+                                                                                                    their currently publised blogs. If a user is not signed in, they do not have the rights to create blogs or comments, as well as editing and deleting blogs.
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="card-button-container">
+                                                                                                <a href="https://github.com/DarionRichards/cms-blog-site" class="button">GitHub Repository</a
+									>
+								</div>
+							</div>
+						</section>
+					</section>
+				</section>
+			</section>
+		</main>
+
+		<!--Footer Section-->
+		<footer id="contact-me" class="footer-container">
+			<p>Contact me on Social Media</p>
+			<section class="icon-container">
+				<a href="https://en-gb.facebook.com/">
+					<i class="fab fa-facebook"></i>
+				</a>
+                                                                                                <a href="https://www.instagram.com/?hl=en">
+                                                                                                    <i class="fab fa-instagram"></i>
+                                                                                                </a>
+                                                                                                <a href="https://twitter.com/?lang=en-gb">
+                                                                                                    <i class="fab fa-twitter"></i>
+                                                                                                </a>
+                                                                                                <a href="https://www.linkedin.com/in/darionrichards/">
+                                                                                                    <i class="fab fa-linkedin"></i>
+                                                                                                </a>
+                                                                                                <a href="https://github.com/DarionRichards">
+                                                                                                    <i class="fab fa-github"></i>
+                                                                                                </a>
                     </section>
-                </section>
-            </section>
-        </section>
-    </main>
-
-    <!--Footer Section-->
-
-    <footer id="contact-me" class="footer-container">
-        <p>Contact me on Social Media</p>
-        <a href="https://en-gb.facebook.com/">
-            <img class="icon" src="assets/images/logo-facebook.svg" alt="Facebook Icon" />
-        </a>
-        <a href="https://www.instagram.com/?hl=en">
-            <img class="icon" src="assets/images/logo-instagram.svg" alt="Instagram Icon" />
-        </a>
-        <a href="https://twitter.com/?lang=en-gb">
-            <img class="icon" src="assets/images/logo-twitter.svg" alt="Twitter Icon" />
-        </a>
-        <a href="https://www.snapchat.com/">
-            <img class="icon" src="assets/images/logo-snapchat.svg" alt="Snapchat Icon" />
-        </a>
-        <p>Powered by HTMl, CSS and JavaScript</p>
-    </footer>
-
-    <script src="./assets/javascript/navbar.js"></script>
+                    <p>Powered by HTMl, CSS and JavaScript</p>
+                    </footer>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+                    <script src="https://kit.fontawesome.com/8b26d47a6c.js" crossorigin="anonymous"></script>
+                    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

@@ -39,3 +39,19 @@ ol,
 ul {
     list-style: none;
 }
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+a:hover {
+    color: unset;
+}
+
+
+/* Bootstrap Reset */
+
+.container {
+    margin: unset !important;
+}
